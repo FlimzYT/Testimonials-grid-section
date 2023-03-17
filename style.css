@@ -1,0 +1,147 @@
+*{
+    font-family: "Barlow Semi Condensed", sans-serif;
+    color: white;
+    font-weight: 300;
+}
+body{
+    padding: 20px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: hsl(263, 55%, 52%);
+    /*height: 50vh;
+    height: 50svh;*/
+    padding: 35px 35px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    position: relative;
+}
+.shadow{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    box-shadow: 30px 50px 150px -50px hsla(228, 42%, 28%, 0.438);
+    border-radius: inherit;
+}
+.profile{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 20px;
+
+}
+.profile .name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.name p, .card .name h4{
+    margin: 0;
+    font-size: 0.9rem;
+    color: hsl(0, 0%, 81%);
+}
+.name p{
+    color: hsl(0, 0%, 81%, 50%);
+}
+.profile img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid hsla(0, 0%, 81%, 0.74);
+}
+.card .message{
+    font-size: 0.9rem;
+    color: hsl(0, 0%, 81%, 70%);
+}
+.card h1{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.card2{
+    background-color: hsl(217, 19%, 35%);
+}
+.card3, .card5{
+    background-color: hsl(0, 0%, 100%);
+}
+.card3 .profile .name h4, .card5 .profile .name h4{
+    color: hsl(219, 29%, 14%);
+}
+.card3 .profile .name p, .card5 .profile .name p{
+    color: hsl(219, 29%, 14%, 50%);
+}
+.card3 h1, .card5 h1{
+    color: hsl(219, 29%, 14%);
+}
+.card3 .message{
+    color: hsl(219, 29%, 14%, 70%);
+}
+.card5 .message{
+    color: hsl(219, 29%, 14%, 70%);
+}
+.card4{
+    background-color: hsl(219, 29%, 14%);
+}
+
+@media (min-width: 576px){
+    html{
+        height: 100vh;
+    }
+    body{
+        padding: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        box-sizing:border-box;
+        margin: 0;
+    }
+    main{
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+    }
+    .left{
+        flex: 0.8;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .top, .bottom{
+        display: flex;
+        gap: 40px;
+    }
+    .card5{
+        flex: 0.2;
+    }
+    .card{
+        margin: 0;
+        padding: 40px 40px;
+    }
+    .card1{
+        flex: 0.65;
+    }
+    .card2{
+        flex: 0.35;
+    }
+    .card3{
+        flex: 0.35;
+    }
+    .card4{
+        flex: 0.65;
+    }
+    .card .profile .name h4, .card .profile .name p{
+        font-size: 1rem;
+    }
+    .card h1{
+        font-size: 1.6rem;
+    }
+    .card .message{
+        font-size: 1.2rem;
+    }
+}
